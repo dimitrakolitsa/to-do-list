@@ -1,25 +1,21 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
 
 function App() {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload domo.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-        </div>
-    );
+  return (
+    <div>
+      <h1 className="big-header">To-Do list</h1>
+      <div className="add-task-container">
+        <p className="first-p">Click here to add task:</p>
+        <img
+          className="button-plus"
+          src="https://cdn-icons-png.flaticon.com/512/32/32339.png"
+          alt="buttonpng"
+          border="0"
+        />
+      </div>
+    </div>
+  );
 }
 
 export default App;
